@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <section class="game elliptic-bottom">
+        <div class="players">
+            <div class="player">
+                <h2 class="underlined">Computer</h2>
+                <span class="choice" id="computer-choice"></span>
+                <!-- STATS -->
+            </div>
+            <div class="player">
+                <h2 class="underlined">User</h2>
+                <span class="choice" id="user-choice"></span>
+                <!-- STATS -->
+            </div>
+        </div>
+
+        <div class="stats">
+            <h2>Result</h2>
+            <span class="underlined" id="result"></span>
+        </div>
+
+        <div class="options">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </section>
+
+
+    <section class="statistics"></section>
+
+
+    <!--
+        TODO:
+        Add an score bar.
+        Get statistics of the game.
+        Store them in an array: {computer: 'rock', user: 'paper'}.
+        Use objects to represent each choice and keep the array in session storage.
+        Statistics to show:
+        The computer chose `rock` N times (N% of the time).
+                           `paper` N times (N% of the time).
+                           `scissors` N times (N% of the time).
+        The computer wins N games (N% of the time) and 
+                    loses N games (N% of the time).
+        Maximum consecutive won games: N.
+        Maximum consecutive lost games: N.
+
+        The same for the user and utilize an artificial intelligence to
+        predict the next move of the user.
+
+    -->
+</body>
+
+</html>

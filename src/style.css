@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Fraunces 144pt";
+    src: url("../assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Fraunces-Variable";
+    src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/static/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Manrope-Variable";
+    src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+:root {
+    --Dark-Purple: #24053E;
+    --Eucaplyptus: #44FFA1;
+    --Davys-Grey: #584D62;
+    --Ghost-White: #FCF8FF;
+    --White: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.game {
+    background-color: var(--Dark-Purple);
+    color: #fff;
+}
+
+.elliptic-bottom {
+    padding-bottom: 100px;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.underlined {
+    border: none;
+    text-decoration: underline var(--Eucaplyptus) 3px;
+    text-underline-offset: 8px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+    font-family: 'Fraunces 144pt', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+    font-size: 1.5rem;
+    font-family: 'Fraunces 144pt', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 2rem;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.players {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+button {
+    color: #24053E;
+    background-color: #41E697;
+    font-family: Manrope, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 2rem;
+    font-size: 20px;
+    font-style: normal;
+    padding: 13px 24.5px 16px 25.5px;
+    border: none;
+    outline: none;
+    width: 120px;
+}
+
+button:hover {
+    color: var(--Eucaplyptus);
+    background-color: transparent;
+    padding: 11px 22.5px 14px 23.5px;
+    border: 2px solid var(--Eucaplyptus);
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
