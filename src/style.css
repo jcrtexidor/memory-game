@@ -31,3 +31,76 @@
     padding: 0;
     border: none;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: min-content;
+}
+
+#grid img {
+    max-width: 100px;
+    user-select: none;
+}
+
+.block {
+    pointer-events: none;
+}
+
+
+.button {
+    color: #24053E;
+    background-color: #41E697;
+    font-family: Manrope, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 2rem;
+    font-size: 20px;
+    font-style: normal;
+    padding: 13px 24.5px 16px 25.5px;
+    border: none;
+    outline: none;
+    width: 120px;
+}
+
+.button:hover {
+    color: var(--Eucaplyptus);
+    background-color: transparent;
+    padding: 11px 22.5px 14px 23.5px;
+    border: 2px solid var(--Eucaplyptus);
+}
+
+.game {
+    background-color: var(--Dark-Purple);
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.elliptic-bottom {
+    padding-bottom: 100px;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.header {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+    font-family: 'Fraunces 144pt', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subHeader {
+    font-size: 1.5rem;
+    font-family: 'Fraunces 144pt', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 2rem;
+}
