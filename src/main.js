@@ -28,6 +28,8 @@ createBoard = () => {
     const grid = document.querySelector('#grid');
     [...grid.children].forEach(node => node.remove());
 
+    document.querySelector('#result').innerHTML = '0';
+
     cards.forEach((card, index) => {
         const img = document.createElement('img');
         img.setAttribute('src', '../assets/images/blank.png');
